@@ -1,0 +1,79 @@
+# Single Cell Vocabulary
+
+Definitions of terms used in single-cell genomics.
+
+- **barcode**
+  - _(bioinformatic)_ A sequence of nucleotides that can correspond to a sample, nuclei, cell, or biological feature.
+- **cell**:
+  - Containers of biological material such as RNA/DNA/Proteins necessary for life
+- **depth**:
+  - _(count)_ The average number of UMI counts per barcode
+  - _(sequencing depth)_ The number of reads divided by the number of cells/nuclei assayed
+- **doublet**
+  - _(bead)_ Two beads in a single droplet with one cell
+  - _(bioinformatic)_ A barcode with at least double the number of counts than expected
+  - _(cell/nuclei)_ Two cells in a single droplet with one bead
+- **droplet**:
+  - A type of [[shell]] container often used to isolate individual cells or nuclei in single-cell/nuclei assays
+- **fasta**
+  - A text file containing multiple two line entries where each entry corresponds to a nucleotide sequence
+- **fastq**
+  - A text file containing multiple four line entries where each entry corresponds to a molecule from the library sequenced on a sequencer.
+- **gene**:
+  - _(bioinformatic)_ An entry in a GTF file that corresponds to a _biological_ "gene" region
+- **grna**
+  - guide RNA, a synthetic nucleotide sequence designed so that the CRISPR CAS system can target specific gene sequences
+- **index**:
+  - _(Illumina)_ a synthetic barcode that labels a sequencing library, often referred to as i5/i7
+  - _(sample)_ a synthetic barcode that labels a sample
+- **intron**
+  - A non-coding sequence of DNA or RNA that is present within a gene.
+- **isoform**:
+  - _(bioinformatic)_ An entry in a GTF file that corresponds to a _biological_ isoform of a gene
+- **lane**:
+  - _(10x Genomics)_ A physical lane in the 10x genomics microfluidic chip. Input are cells, beads, and reagents.
+  - _(Illumina)_ A lane is a physical division on a microfluidic flow-cell (used in a sequencing machine) that partitions (separates) the sequencing library into parts. Often this is done in order to sequencing multiple sequencing libraries in one run of the machine, i.e. one sequencing library per lane (see multiplexing). Sequencing flow cells often come with 2 or 4 lanes.
+- **library**:
+  - _(sequencing)_ A set of DNA molecules that contain DNA primers and a sequencing construct of interest to be sequencing on a sequencing platform
+- **linker**
+  - A fixed nucleotide sequence that is often used to connect barcodes when creating a sequencing construct
+- **modality**
+  - The molecular feature to be captured and analyzed. Possible modes include RNA, DNA, Protein, Variation, gRNA, and Synthetic tags. Multimodality refers to capturing combinations of these molecular modes.
+- **multiplexing**:
+  - _(cell)_ Cells are each naturally or synthetically tagged with a barcode and then mixed prior to experimentation. Barcoding enables downstream demultiplexing or identification of the constituent cells.
+  - _(library)_ Sequencing libraries are synthetically tagged with barcodes and then mixed prior to experimentation.
+  - _(sample)_ Samples are synthetically tagged with barcodes and then mixed prior to experimentation.
+- **nuclei**
+  - A container of biological material that is often separated from its cell of origin for experimentation.
+- **offlist**
+  - (often referred to as a blacklist) A list of prohibited barcode sequences
+- **onlist**
+  - (often referred to as a whitelist) A list of permissible barcode sequences that are expected to be present in a library
+- **poly-A**:
+  - _(bioinformatic)_ A series of multiple Adenosine nucleotides in a series.
+  - _(biological)_ A series of multiple Adenosine nucleotides, often present at the 3' tail of RNA molecules
+- **primer**:
+  - _(sequencing)_ A sequencing primer is a short, synthetic DNA or RNA oligonucleotide that is used in DNA sequencing reactions to initiate the synthesis of a new DNA strand. It serves as a starting point for DNA polymerase to extend the primer and generate a complementary strand of DNA during the sequencing process. Sequencing companies have developed sequencer specific primers such as the Illumina P5/P7 primer
+- **protein**
+  - _(cell surface)_ Amino acid chains folded and accessible on the cell's surface
+- **read**:
+  - A sequencing read is a DNA molecule that was sequenced and base-called and which has a 4 line entry in a FASTQ file. The question "how many reads did you sequence?" can be answered by counting the number of 4 line blocks in a FASTQ file (or the number of lines in the fastq file divided by 4)
+- **rna**
+  - (cytoplasmic) refers to the RNA molecules present in the cytoplasm of a cell. This includes mature mRNA as well as other types of RNA.
+  - (nuclear) refers to the RNA molecules that are contained within the nucleus of eukaryotic cells. This includes pre-mRNA as well as other types of RNA important for nuclear functions.
+- **sample**
+  - In the context of biology and bioinformatics, the term "sample" can have several meanings depending on the specific context and application.
+- **[[shell]]**:
+  - Physical containers, such as droplets, into which reagents, cells, or other contents can be isolated. Assays that use [[shell]]s to isolate contents include the 10x Genomics Droplet based assays
+- **tag**
+  - Often used to refer to a barcode that corresponds to a specific sample
+- **transcript**:
+  - (bioinformatic)
+  - (biological)
+- **umi**:
+  - _(bioinformatic)_ A random sequence of letters (A/T/G/C) of a fixed length.
+  - _(biological)_ Unique Molecular Identifier, a random synthetic DNA barcode that is attached to molecular features of interest. Tools often "collapse" UMIs to enable direct molecular counting.
+  - _(collapsing)_ The process of identifying the unique set of UMIs present for a cell-gene(or transcript/feature) pair
+  - _(counting)_ The process of counting the unique set of UMIs for a cell-gene(or transcript/feature) pair
+- **well**:
+  - Physical containers into which reagents, cells, or other contents can be isolated. Often used to isolate individual cells for barcoding. Examples include a 96 well plate.
