@@ -14,7 +14,7 @@ Definitions of terms used in single-cell genomics.
   - _(bioinformatic)_ A barcode with at least double the number of counts than expected
   - _(cell/nuclei)_ Two cells in a single droplet with one bead
 - **droplet**:
-  - A type of [[shell]] container often used to isolate individual cells or nuclei in single-cell/nuclei assays
+  - A type of shell container often used to isolate individual cells or nuclei in single-cell/nuclei assays
 - **fasta**
   - A text file containing multiple two line entries where each entry corresponds to a nucleotide sequence
 - **fastq**
@@ -63,8 +63,8 @@ Definitions of terms used in single-cell genomics.
   - (nuclear) refers to the RNA molecules that are contained within the nucleus of eukaryotic cells. This includes pre-mRNA as well as other types of RNA important for nuclear functions.
 - **sample**
   - In the context of biology and bioinformatics, the term "sample" can have several meanings depending on the specific context and application.
-- **[[shell]]**:
-  - Physical containers, such as droplets, into which reagents, cells, or other contents can be isolated. Assays that use [[shell]]s to isolate contents include the 10x Genomics Droplet based assays
+- **shell**:
+  - Physical containers, such as droplets, into which reagents, cells, or other contents can be isolated. Assays that use shells to isolate contents include the 10x Genomics Droplet based assays
 - **tag**
   - Often used to refer to a barcode that corresponds to a specific sample
 - **transcript**:
