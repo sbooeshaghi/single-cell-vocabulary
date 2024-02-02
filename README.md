@@ -3,9 +3,11 @@
 Definitions of terms used in single-cell genomics.
 
 - **barcode**
-  - _(bioinformatic)_ A sequence of nucleotides that can correspond to a sample, nuclei, cell, or biological feature.
+  - _(bioinformatic)_ A sequence of nucleotides that can correspond to a sample, nuclei, cell, or biological feature
 - **cell**:
   - Containers of biological material such as RNA/DNA/Proteins necessary for life
+- **cycle**:
+  - _(Illuina sequencing)_ the process of adding and sequencing a single base when sequencing by synthesis
 - **depth**:
   - _(count)_ The average number of UMI counts per barcode
   - _(sequencing depth)_ The number of reads divided by the number of cells/nuclei assayed
